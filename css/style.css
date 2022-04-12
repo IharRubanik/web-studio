@@ -114,7 +114,7 @@ body .wrapper .header .header__left-block .header__logo-title {
 
 body .wrapper .header .header__left-block .header__logo-title span {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 0.625vw;
   line-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,7 +126,7 @@ body .wrapper .header .header__left-block .header__logo-title span {
 
 body .wrapper .header .header__left-block .header__logo-title span:last-child {
   font-weight: 400;
-  font-size: 10px;
+  font-size: 0.521vw;
   line-height: 120%;
 }
 

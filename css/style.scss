@@ -1,0 +1,233 @@
+/* rubik-regular - latin_cyrillic */
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik-v19-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/rubik-v19-latin_cyrillic-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/rubik-v19-latin_cyrillic-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/rubik-v19-latin_cyrillic-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/rubik-v19-latin_cyrillic-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/rubik-v19-latin_cyrillic-regular.svg#Rubik") format("svg"); /* Legacy iOS */
+}
+/* rubik-500 - latin_cyrillic */
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/rubik-v19-latin_cyrillic-500.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/rubik-v19-latin_cyrillic-500.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/rubik-v19-latin_cyrillic-500.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/rubik-v19-latin_cyrillic-500.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/rubik-v19-latin_cyrillic-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/rubik-v19-latin_cyrillic-500.svg#Rubik") format("svg"); /* Legacy iOS */
+}
+/* rubik-600 - latin_cyrillic */
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/rubik-v19-latin_cyrillic-600.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/rubik-v19-latin_cyrillic-600.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/rubik-v19-latin_cyrillic-600.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/rubik-v19-latin_cyrillic-600.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/rubik-v19-latin_cyrillic-600.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/rubik-v19-latin_cyrillic-600.svg#Rubik") format("svg"); /* Legacy iOS */
+}
+/* rubik-700 - latin_cyrillic */
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik-v19-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/rubik-v19-latin_cyrillic-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/rubik-v19-latin_cyrillic-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/rubik-v19-latin_cyrillic-700.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/rubik-v19-latin_cyrillic-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/rubik-v19-latin_cyrillic-700.svg#Rubik") format("svg"); /* Legacy iOS */
+}
+.container {
+  width: 57.031vw;
+  margin: 0 auto;
+}
+button {
+  cursor: pointer;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Rubik;
+  font-style: normal;
+  color: #484b50;
+  .wrapper {
+    padding: 1.823vw 0 0 0;
+    width: 100%;
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .header__left-block {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.521vw;
+        img {
+          width: 3.229vw;
+        }
+        .header__logo-title {
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          justify-content: center;
+          span {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 100%;
+            display: flex;
+            align-items: center;
+            &:last-child {
+              font-weight: 400;
+              font-size: 10px;
+              line-height: 120%;
+            }
+          }
+        }
+      }
+      .header__right-block {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1.042vw;
+        button {
+          width: 7.708vw;
+          height: 2.083vw;
+          border: 0.052vw solid #484b50;
+          border-radius: 0.313vw;
+          background: none;
+          font-weight: 400;
+          font-size: 0.781vw;
+          color: #484b50;
+          transition: 0.2s;
+          &:nth-child(1) {
+            &:hover {
+              background: #484b50;
+              color: #ffffff;
+            }
+          }
+          &:nth-child(2) {
+            background-color: #4444c7;
+            border: none;
+            color: #ffffff;
+            font-weight: 600;
+            &:hover {
+              background: #5c5cdc;
+            }
+          }
+          &:nth-child(3) {
+            display: flex;
+            align-items: center;
+            width: 2.083vw;
+            height: 1.146vw;
+            justify-content: center;
+            gap: 0.26vw;
+            font-weight: 500;
+            font-size: 0.469vw;
+            border: none;
+            background-color: #e3e3f0;
+            &:hover {
+              background: #ffffff;
+            }
+            img {
+              border-radius: 100%;
+            }
+          }
+        }
+      }
+    }
+    .main {
+      padding: 5.208vw 0 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .main__logo {
+        width: 14.74vw;
+        transform: translateX(-20%);
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 2.5vw;
+        margin: 1.563vw 0 0 0;
+      }
+      span {
+        font-weight: 400;
+        font-size: 0.833vw;
+        margin: 0.521vw 0 0 0;
+      }
+      button {
+        margin: 1.563vw 0 0 0;
+        width: 7.708vw;
+        height: 2.083vw;
+        border-radius: 0.313vw;
+        background: none;
+        font-weight: 600;
+        font-size: 0.781vw;
+        transition: 0.2s;
+        background-color: #4444c7;
+        border: none;
+        color: #ffffff;
+        &:hover {
+          background: #5c5cdc;
+        }
+      }
+    }
+    .about {
+      padding: 3.229vw 0 0 0;
+      display: flex;
+      justify-content: space-between;
+      .about__elem {
+        display: flex;
+        flex-direction: column;
+        width: 17.969vw;
+        gap: 1.563vw;
+        img {
+          width: 17.969vw;
+        }
+        h2 {
+          font-weight: 700;
+          font-size: 1.458vw;
+        }
+        p {
+          font-weight: 400;
+          font-size: 0.833vw;
+        }
+      }
+    }
+  }
+}

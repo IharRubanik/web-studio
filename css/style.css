@@ -49,6 +49,7 @@
 
 button {
   cursor: pointer;
+  padding: 0;
 }
 
 * {
@@ -196,7 +197,8 @@ body .wrapper .header .header__right-block button:nth-child(3):hover {
 }
 
 body .wrapper .header .header__right-block button:nth-child(3) img {
-  border-radius: 100%;
+  border-radius: 50%;
+  width: 0.625vw;
 }
 
 body .wrapper .main {

@@ -71,7 +71,7 @@
       url("../fonts/rubik-v19-latin_cyrillic-700.svg#Rubik") format("svg"); /* Legacy iOS */
 }
 .container {
-  width: 57.031vw;
+  width: 1095px;
   margin: 0 auto;
 }
 button {
@@ -87,7 +87,7 @@ body {
   font-style: normal;
   color: #484b50;
   .wrapper {
-    padding: 1.823vw 0 0 0;
+    padding: 35px 0 0 0;
     width: 100%;
     .header {
       display: flex;
@@ -97,9 +97,9 @@ body {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        gap: 0.521vw;
+        gap: 12px;
         img {
-          width: 3.229vw;
+          width: 60px;
         }
         .header__logo-title {
           display: flex;
@@ -108,13 +108,13 @@ body {
           justify-content: center;
           span {
             font-weight: 600;
-            font-size: 0.625vw;
+            font-size: 12px;
             line-height: 100%;
             display: flex;
             align-items: center;
             &:last-child {
               font-weight: 400;
-              font-size: 0.521vw;
+              font-size: 10px;
               line-height: 120%;
             }
           }
@@ -124,15 +124,15 @@ body {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        gap: 1.042vw;
+        gap: 20px;
         button {
-          width: 7.708vw;
-          height: 2.083vw;
-          border: 0.052vw solid #484b50;
-          border-radius: 0.313vw;
+          width: 148px;
+          height: 40px;
+          border: 1px solid #484b50;
+          border-radius: 6px;
           background: none;
           font-weight: 400;
-          font-size: 0.781vw;
+          font-size: 15px;
           color: #484b50;
           transition: 0.2s;
           &:nth-child(1) {
@@ -153,12 +153,12 @@ body {
           &:nth-child(3) {
             display: flex;
             align-items: center;
-            width: 2.083vw;
-            height: 1.146vw;
+            width: 40px;
+            height: 22px;
             justify-content: center;
-            gap: 0.26vw;
+            gap: 5px;
             font-weight: 500;
-            font-size: 0.469vw;
+            font-size: 9px;
             border: none;
             background-color: #e3e3f0;
             &:hover {
@@ -166,40 +166,40 @@ body {
             }
             img {
               border-radius: 50%;
-              width: 0.625vw;
+              width: 12px;
             }
           }
         }
       }
     }
     .main {
-      padding: 5.208vw 0 0 0;
+      padding: 100px 0 0 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       .main__logo {
-        width: 14.74vw;
+        width: 283px;
         transform: translateX(-20%);
       }
       h1 {
         font-weight: 700;
-        font-size: 2.5vw;
-        margin: 1.563vw 0 0 0;
+        font-size: 48px;
+        margin: 30px 0 0 0;
       }
       span {
         font-weight: 400;
-        font-size: 0.833vw;
-        margin: 0.521vw 0 0 0;
+        font-size: 16px;
+        margin: 10px 0 0 0;
       }
       button {
-        margin: 1.563vw 0 0 0;
-        width: 7.708vw;
-        height: 2.083vw;
-        border-radius: 0.313vw;
+        margin: 30px 0 0 0;
+        width: 148px;
+        height: 40px;
+        border-radius: 6px;
         background: none;
         font-weight: 600;
-        font-size: 0.781vw;
+        font-size: 15px;
         transition: 0.2s;
         background-color: #4444c7;
         border: none;
@@ -210,27 +210,26 @@ body {
       }
     }
     .about {
-      padding: 3.229vw 0 0 0;
+      padding: 86px 0 0 0;
       display: flex;
       justify-content: space-between;
       .about__elem {
         display: flex;
         flex-direction: column;
-        width: 17.969vw;
-        gap: 1.563vw;
+        width: 345px;
+        gap: 30px;
         img {
-          width: 17.969vw;
+          width: 345px;
         }
         h2 {
           font-weight: 700;
-          font-size: 1.458vw;
+          font-size: 28px;
+          line-height: 100%;
         }
         p {
           font-weight: 400;
-          font-size: 0.833vw;
-          br{
-              margin: 1.563vw 0 0 0;
-          }
+          font-size: 16px;
+          line-height: 130%;
         }
       }
     }

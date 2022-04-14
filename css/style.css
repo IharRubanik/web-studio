@@ -292,4 +292,51 @@ body .wrapper .about .about__elem p {
   font-size: 16px;
   line-height: 130%;
 }
+
+body .wrapper .portfolio {
+  padding: 80px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .wrapper .portfolio .portfolio__title {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+body .wrapper .portfolio .portfolio__subtitle {
+  margin: 10px 0 0 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+}
+
+body .wrapper .portfolio .portfolio__flex-container {
+  margin: 30px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .wrapper .portfolio .portfolio__flex-container .flex-elem {
+  margin: 30px 0 0 0;
+  width: 345px;
+  height: 322px;
+  background-color: #484b50;
+  border-radius: 6px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -352,7 +352,9 @@ body .wrapper .portfolio .portfolio__flex-container .flex-elem .flex-elem__slide
 }
 
 body .wrapper .portfolio .portfolio__flex-container .flex-elem .flex-elem__slider .swiper-wrapper .swiper-slide img {
+  display: block;
   width: 100%;
+  border-radius: 6px 6px 0 0;
 }
 
 body .wrapper .portfolio .portfolio__flex-container .flex-elem .flex-elem__slider .swiper-button-prev,

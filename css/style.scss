@@ -269,7 +269,9 @@ body {
             .swiper-wrapper {
               .swiper-slide {
                 img {
+                  display: block;
                   width: 100%;
+                  border-radius: 6px 6px 0 0;
                 }
               }
             }

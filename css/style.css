@@ -74,6 +74,10 @@ body {
   color: #484b50;
 }
 
+body .wrapper-mobile {
+  display: none;
+}
+
 body .wrapper {
   padding: 35px 0 0 0;
   width: 100%;
@@ -351,6 +355,15 @@ body .wrapper .portfolio .portfolio__flex-container .flex-elem .flex-elem__slide
   height: 260px;
 }
 
+body .wrapper .portfolio .portfolio__flex-container .flex-elem .flex-elem__slider:hover .swiper-button-next,
+body .wrapper .portfolio .portfolio__flex-container .flex-elem .flex-elem__slider:hover .swiper-button-prev {
+  background-image: url(../img/portfolio/arrow-white.svg);
+}
+
+body .wrapper .portfolio .portfolio__flex-container .flex-elem .flex-elem__slider .swiper-wrapper .swiper-slide:hover {
+  cursor: pointer;
+}
+
 body .wrapper .portfolio .portfolio__flex-container .flex-elem .flex-elem__slider .swiper-wrapper .swiper-slide img {
   display: block;
   width: 100%;
@@ -383,18 +396,10 @@ body .wrapper .portfolio .portfolio__flex-container .flex-elem .flex-elem__slide
   background-image: url(../img/portfolio/arrow-grey.svg);
 }
 
-body .wrapper .portfolio .portfolio__flex-container .flex-elem .flex-elem__slider .swiper-button-prev:hover {
-  background-image: url(../img/portfolio/arrow-white.svg);
-}
-
 body .wrapper .portfolio .portfolio__flex-container .flex-elem .flex-elem__slider .swiper-button-next {
   background-image: url(../img/portfolio/arrow-grey.svg);
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-}
-
-body .wrapper .portfolio .portfolio__flex-container .flex-elem .flex-elem__slider .swiper-button-next:hover {
-  background-image: url(../img/portfolio/arrow-white.svg);
 }
 
 body .wrapper .portfolio .portfolio__flex-container .flex-elem .flex-elem__slider .swiper-pagination .swiper-pagination-bullet {

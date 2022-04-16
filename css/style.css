@@ -78,7 +78,7 @@ body .wrapper-mobile {
   display: none;
   padding: 0 15px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -720,6 +720,9 @@ body .wrapper .footer .footer__description {
 }
 
 @media (max-width: 1200px) {
+  body {
+    overflow: hidden;
+  }
   body .wrapper {
     display: none;
   }

@@ -30,3 +30,9 @@ const swiper = new Swiper('.flex-elem__slider', {
       clickable: true,
     },
   });
+
+  let vh = window.innerHeight * 0.01;
+
+// Затем устанавливаем значение свойства --vh
+// для корневого элемента
+document.documentElement.style.setProperty('--vh', `${vh}px`);

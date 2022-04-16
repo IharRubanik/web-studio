@@ -79,7 +79,8 @@ body {
       max-width: 630px;
       margin: 0 auto;
       .main-mobile__slider {
-        height: 83vh;
+        height: calc(var(--vh, 1vh) * 83);
+        // height: 83vh;
         .swiper-wrapper {
           .swiper-slide {
 

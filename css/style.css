@@ -124,7 +124,7 @@ body .wrapper-mobile .main-mobile {
 }
 
 body .wrapper-mobile .main-mobile .main-mobile__slider {
-  height: 83vh;
+  height: calc(var(--vh, 1vh) * 83);
 }
 
 body .wrapper-mobile .main-mobile .main-mobile__slider .swiper-wrapper .swiper-slide {

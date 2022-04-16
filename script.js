@@ -36,3 +36,9 @@ const swiper = new Swiper('.flex-elem__slider', {
 // Затем устанавливаем значение свойства --vh
 // для корневого элемента
 document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+window.addEventListener('resize', () => {
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});

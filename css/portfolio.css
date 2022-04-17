@@ -244,7 +244,24 @@ body .wrapper .main-portfolio .portfolio__flex-container .flex-elem .flex-elem__
   color: #484b50;
 }
 
+body .wrapper .main-portfolio .main-portfolio__button {
+  width: 100%;
+  margin: 15px auto 0;
+  height: 40px;
+  background: #4444c7;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #FFFFFF;
+  border: none;
+}
+
+body .wrapper .main-portfolio .main-portfolio__button:hover {
+  background-color: #5C5CDC;
+}
+
 body .wrapper .footer-portfolio {
+  margin: 85px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

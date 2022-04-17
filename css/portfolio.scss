@@ -80,7 +80,7 @@ body {
         text-align: center;
       }
       .portfolio__subtitle {
-        margin: 10px 0 0 0 ;
+        margin: 10px 0 0 0;
         display: block;
         font-weight: 400;
         font-size: 16px;
@@ -97,7 +97,6 @@ body {
         gap: 15px;
 
         .flex-elem {
-          // margin: 30px 0 0 0;
           width: 345px;
           height: 322px;
           border-radius: 6px;
@@ -179,8 +178,23 @@ body {
           }
         }
       }
+      .main-portfolio__button {
+        width: 100%;
+        margin: 15px auto 0;
+        height: 40px;
+        background: #4444c7;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 15px;
+        color: #FFFFFF;
+        border: none;
+        &:hover{
+          background-color: #5C5CDC;
+        }
+      }
     }
     .footer-portfolio {
+      margin: 85px 0 0 0;
       display: flex;
       align-items: center;
       justify-content: space-between;

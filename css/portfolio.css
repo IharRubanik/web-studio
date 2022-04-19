@@ -18,7 +18,14 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
   text-decoration: none;
+}
+
+a :focus {
+  outline: 0;
 }
 
 body {
@@ -414,12 +421,12 @@ body .wrapper .main-portfolio .main-portfolio__button {
   border-radius: 6px;
   font-weight: 600;
   font-size: 15px;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
 }
 
 body .wrapper .main-portfolio .main-portfolio__button:hover {
-  background-color: #5C5CDC;
+  background-color: #5c5cdc;
 }
 
 body .wrapper .footer-portfolio {

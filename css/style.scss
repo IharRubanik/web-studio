@@ -4,6 +4,9 @@
 }
 a {
   text-decoration: none;
+  :focus {
+    outline: 0;
+  }
 }
 button {
   cursor: pointer;
@@ -23,6 +26,7 @@ body {
   font-style: normal;
   color: #484b50;
   .wrapper-mobile {
+    position: relative;
     display: none;
     padding: 0 15px 15px 15px;
     width: 100%;
@@ -34,6 +38,52 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      .language {
+        &.active{
+          display: flex;
+        }
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        right: 15px;
+        top: 31px;
+        z-index: 2;
+        background: #E3E3F0;
+        border-radius: 6px 0 6px 6px;
+        .language__ru,
+        .language__en {
+          width: 130px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 0 15px;      
+          img {
+            width: 18px;
+            border-radius: 100%;
+          }
+          span {
+            font-weight: 400;
+            font-size: 14px;
+          }
+          &:hover{
+            transition: .3s;
+            cursor: pointer;
+            background-color: #FFFFFF;
+          }
+        }
+        .language__ru{
+          border-radius: 6px 0 0 0;
+          border-bottom: 1px #D6D6E0 solid;
+          &:hover{
+            border-radius: 6px 0 0 0;
+            
+          }
+        }
+      
+    }
+
+
       .header-mobile__left-block {
         display: flex;
         align-items: center;
@@ -196,7 +246,7 @@ body {
           font-size: 28px;
           color: #ffffff;
           margin: 0 0 10px 0;
-          br{
+          br {
             display: none;
           }
         }
@@ -256,7 +306,7 @@ body {
                 img {
                   width: 24px;
                 }
-                .span-container{
+                .span-container {
                   display: flex;
                   flex-direction: column;
                   align-items: flex-start;
@@ -271,7 +321,6 @@ body {
                     }
                   }
                 }
-
               }
             }
           }
@@ -283,11 +332,54 @@ body {
     padding: 35px 0 0 0;
     width: 100%;
     position: relative;
-
     .header {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      position: relative;
+      .language {
+        &.active{
+          display: flex;
+        }
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        right: 0;
+        top: 31px;
+        z-index: 2;
+        background: #E3E3F0;
+        border-radius: 6px 0 6px 6px;
+        .language__ru,
+        .language__en {
+          width: 130px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 0 15px;      
+          img {
+            width: 18px;
+            border-radius: 100%;
+          }
+          span {
+            font-weight: 400;
+            font-size: 14px;
+          }
+          &:hover{
+            transition: .3s;
+            cursor: pointer;
+            background-color: #FFFFFF;
+          }
+        }
+        .language__ru{
+          border-radius: 6px 0 0 0;
+          border-bottom: 1px #D6D6E0 solid;
+          &:hover{
+            border-radius: 6px 0 0 0;
+            
+          }
+        }
+      }
       .header__left-block {
         display: flex;
         align-items: center;
@@ -591,25 +683,25 @@ body {
     .social-container {
       &.active {
         .social {
-          .social__title{
+          .social__title {
             line-height: 130%;
-            br{
+            br {
               display: block;
             }
           }
           .social__flex-container {
             flex-direction: column;
             gap: 10px;
-            a{
-              .social__flex-elem{
+            a {
+              .social__flex-elem {
                 width: 90vw;
                 height: 64px;
-                .flex-elem__left-block{
+                .flex-elem__left-block {
                   align-items: center;
                   flex-direction: row;
                   gap: 15px;
                 }
-                .flex-elem__qr{
+                .flex-elem__qr {
                   display: none;
                 }
               }

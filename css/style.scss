@@ -1,3 +1,15 @@
+@keyframes hand {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
 .container {
   width: 1095px;
   margin: 0 auto;
@@ -159,6 +171,7 @@ body {
             .hand {
               margin: 30px 0 0 0;
               width: 25px;
+              animation: hand 1.5s linear infinite;
             }
             .main-mobile__slide-logo {
               width: 309px;

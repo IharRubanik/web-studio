@@ -66,83 +66,46 @@ let lang = document.querySelectorAll(".lang_button"),
   langActive = document.querySelectorAll(".language"),
   body = document.querySelector("body");
 
-lang.forEach((buttonLang) => {
-  buttonLang.addEventListener("click", function () {
+body.addEventListener("click", function (event) {
+  let target = event.target;
+  while (target != body) {
+    if (target.className == "lang_button") {
+      for (let i = 0; i < langActive.length; i++) {
+        langActive[i].classList.toggle("active");
+      }
+
+      return;
+    }
+    target = target.parentNode;
+  }
+  if (target.className !== "lang_button") {
     langActive.forEach((language) => {
-      language.classList.toggle("active");
+      if (language.classList.contains("active")) {
+        language.classList.remove("active");
+      }
     });
-  });
+    return;
+  }
 });
 
-
-
-
-// for (let i = 0; i < lang.length; i++) {
-//   lang[i].classList.contains("active")
-
-//     body.addEventListener('click', function(){
-//       console.log(123)
-//       // language.classList.remove("active")
-//     })
-
-// }
-
-// for (let i = 0; i < lang.length; i++) {
-//   lang[i].onclick = function () {
-//     for (let p = 0; p < langActive.length; p++) {
-//       langActive[p].classList.toggle("active");
+// body.onclick = function (event) {
+//   var target = event.target;
+//   while (target != body) {
+//     if (target.className == "lang_button") {
+//       console.log(321);
+//       for (let i = 0; i < langActive.length; i++) {
+//         langActive[i].classList.toggle("active");
+//       }
+//       return;
 //     }
-//   };
-// }
-
-// function addClass() {
-//   for (let i = 0; i < lang.length; i++) {
-//     lang[i].addEventListener("click", removeClass);
+//     target = target.parentNode;
 //   }
-// }
-
-// for (let i = 0; i < lang.length; i++) {
-//   lang[i].onclick = function () {
-//     for (let p = 0; p < langActive.length; p++) {
-//       langActive[p].classList.toggle("active");
-//     }
-//   };
-// }
-// function removeClass() {
-//   for (let p = 0; p < langActive.length; p++) {
-//     if (langActive[p].classList.contains("active")) {
-//       langActive[p].classList.remove("active");
-//     }
+//   if (target.className !== "lang_button") {
+//     langActive.forEach((language) => {
+//       if (language.classList.contains("active")) {
+//         language.classList.remove("active");
+//       }
+//     });
+//     return;
 //   }
-// }
-
-// body.addEventListener('click', removeClass);
-
-// removeClass()
-
-// if (langActive[p].classList.contains("active")) {
-//   body.onclick = function () {
-//     console.log(123);
-//     langActive[p].classList.remove("active");
-//   }
-
-// }
-// body.onclick = function() {
-//   for (let p = 0; p < langActive.length; p++) {
-//   if (langActive[p].classList.contains("active")) {
-//   console.log(123);
-// }
-// }
-// }
-// for (let x = 0; x < langActive.length; x++)
-//   if (langActive[x].classList.contains("active")) {
-
-//     body.onclick = function () {
-
-//       // console.log(123123);
-
-//       langActive[x].classList.remove("active");
-
-//     }
-
-//   }
+// };

@@ -34,6 +34,7 @@ button {
 }
 
 body {
+  background-color: #F6F6FD;
   font-family: Rubik;
   font-style: normal;
   color: #484b50;
@@ -58,10 +59,10 @@ body {
         display: none;
         flex-direction: column;
         right: 15px;
-        top: 31px;
+        top: 41px;
         z-index: 2;
         background: #E3E3F0;
-        border-radius: 6px 0 6px 6px;
+        border-radius: 6px;
         .language__ru,
         .language__en {
           width: 130px;
@@ -85,10 +86,10 @@ body {
           }
         }
         .language__ru{
-          border-radius: 6px 0 0 0;
+          border-radius: 6px 6px 0 0;
           border-bottom: 1px #D6D6E0 solid;
           &:hover{
-            border-radius: 6px 0 0 0;
+            border-radius: 6px 6px 0 0;
             
           }
         }
@@ -358,10 +359,10 @@ body {
         display: none;
         flex-direction: column;
         right: 0;
-        top: 31px;
+        top: 41px;
         z-index: 2;
         background: #E3E3F0;
-        border-radius: 6px 0 6px 6px;
+        border-radius: 6px;
         .language__ru,
         .language__en {
           width: 130px;
@@ -385,10 +386,10 @@ body {
           }
         }
         .language__ru{
-          border-radius: 6px 0 0 0;
+          border-radius: 6px 6px 0 0;
           border-bottom: 1px #D6D6E0 solid;
           &:hover{
-            border-radius: 6px 0 0 0;
+            border-radius: 6px 6px 0 0;
             
           }
         }
@@ -467,6 +468,7 @@ body {
               border-radius: 50%;
               width: 12px;
             }
+           
           }
         }
       }
@@ -648,7 +650,6 @@ body {
               font-size: 12px;
               line-height: 14px;
               color: #ffffff;
-
               &:hover {
                 background: #ffffff;
                 border: none;

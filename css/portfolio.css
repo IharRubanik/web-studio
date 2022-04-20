@@ -414,8 +414,8 @@ body .wrapper .main-portfolio .portfolio__flex-container .flex-elem .flex-elem__
 }
 
 body .wrapper .main-portfolio .main-portfolio__button {
-  width: 100%;
-  margin: 15px auto 0;
+  width: 92vw;
+  margin: 15px auto 85px;
   height: 40px;
   background: #4444c7;
   border-radius: 6px;
@@ -430,7 +430,13 @@ body .wrapper .main-portfolio .main-portfolio__button:hover {
 }
 
 body .wrapper .footer-portfolio {
-  margin: 85px 0 0 0;
+  position: fixed;
+  bottom: 0px;
+  width: 92vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

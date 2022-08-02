@@ -36,7 +36,7 @@ let vh = window.innerHeight * 0.01;
 // для корневого элемента
 document.documentElement.style.setProperty("--vh", `${vh}px`);
 
-window.addEventListener("resize", () => {
+window.addEventListener(" ", () => {
   // Выполняем тот же скрипт, что и раньше
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
@@ -87,25 +87,3 @@ body.addEventListener("click", function (event) {
     return;
   }
 });
-
-// body.onclick = function (event) {
-//   var target = event.target;
-//   while (target != body) {
-//     if (target.className == "lang_button") {
-//       console.log(321);
-//       for (let i = 0; i < langActive.length; i++) {
-//         langActive[i].classList.toggle("active");
-//       }
-//       return;
-//     }
-//     target = target.parentNode;
-//   }
-//   if (target.className !== "lang_button") {
-//     langActive.forEach((language) => {
-//       if (language.classList.contains("active")) {
-//         language.classList.remove("active");
-//       }
-//     });
-//     return;
-//   }
-// };
